@@ -1,6 +1,132 @@
-/*ejemplo de box model*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kalnia+Glaze:wght@100..700&display=swap');
+/*ejemplo de box model
 article {
     border-bottom: 10px rgb(46, 29, 101) solid;
     padding-top: 3rem 8rem;
     margin: 2rem;   
+}
+*/
+/* Ejemplos de id y class 
+.primer {
+    line-height: 3;
+    color: aqua;
+}
+.parrafo {
+    line-height: 2.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+#lista {
+    list-style: none;
+    font-size: 6;
+    color: blue;
+    line-height: 1.4;
+}
+/*Reticulas*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+/*Estilos de navegación*/
+#logo {
+    width: 50px;
+}
+nav {
+    background-color: bisque;
+    padding: 1rem 3rem;
+}
+nav ul{
+display: flex;
+justify-content: space-evenly;
+}
+nav ul a {
+    text-decoration: none;
+    padding: 2rem;
+}
+
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem;
+}
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#logo {
+    width: 50px;
+}
+nav {
+    background-color: bisque;
+    padding: 1rem 3rem;
+}
+
+nav ul{
+display: flex;
+justify-content: space-evenly;
+}
+nav ul a {
+    text-decoration: none;
+    padding: 2rem;
+}
+
+footer {
+    background-color: blueviolet;
+    padding: 3rem;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 3rem;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+/*estilos tipográficos*/
+h1 {
+    font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.primer {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 1;
+  line-height: 3rem;
+}
+.parrafo {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 1;
+  line-height: 3rem;
+}
+
+figcaption {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
+}
+
+#imagenprincipal {
+    width: 100%;
+    object-fit: cover;
 }
