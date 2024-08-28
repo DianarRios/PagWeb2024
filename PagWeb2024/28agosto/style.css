@@ -1,0 +1,40 @@
+header {
+    background-color: aqua;
+}
+main {
+    background-color: bisque;
+}
+aside {
+    background-color: rgb(151, 145, 233);
+}
+footer {
+    background-color: blue;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 2rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado" 
+    "pie pie lado"
+    ;
+}
+header {
+    grid-area: cabeza;
+    background-color: rgb(122, 185, 164);
+}
+main {
+    grid-area: principal;
+    background-color: rgb(147, 212, 226);
+}
+aside {
+    grid-area: lado;
+    background-color: rgb(196, 144, 219);
+}
+footer {
+    grid-area: pie;
+    background-color: rgb(231, 127, 127);
+}

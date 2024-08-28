@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libraries</title>
+
+        <link rel="stylesheet" href="style.css">
+  
+  <style>
+        svg{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<header>
+    <p>Header</p>
+</header>
+    <main>
+        <h1>Librerias de JS</h1>
+        <p>Vivus es una biblioteca JavaScript que le da a su SVG la apariencia de ser dibujado. Vivus funciona sin necesidad de depender de otras librerías, como jQuery. Sólo tienes que incluir el archivo .js en el código HTML, y designar el elemento SVG que deseas animar, junto con algunas opciones predeterminadas para iniciar la animación de inmediato.</p>
+        <div id="my-div">
+            
+        </div>
+    </main>
+    
+    <aside>
+        <h1>Aside</h1>
+    
+</aside>
+<footer>
+    <p>Footer</p>
+</footer>
+
+    </div>
+    <script src="js/vivus.js"></script>
+<script>
+      new Vivus('my-div', {duration: 50, type: 'scenario-sync', file: 'img/huella.svg'},);
+
+</script>
+<script src="https://unpkg.com/scrollreveal@4"></script>
+<script>
+    ScrollReveal().reveal('.head', {delay:200, distance: '150%', origin:'top'});
+    ScrollReveal().reveal('.main', {delay:500});
+    ScrollReveal().reveal('.lado', {delay:1000, rotate: {x:20, z:20}});
+    ScrollReveal().reveal('.pie', {delay:1200, distance: '150%', origin: 
+    'bottom',});
+</script>
+</body>
+</html>
+
